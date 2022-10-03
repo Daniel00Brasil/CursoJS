@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu primeiro programa</title>
+        <style>
+            body{
+                background-color: rgb(110, 150, 224);
+                color: aliceblue;
+                font: normal 25pt arial;
+            } 
+            h1,p {
+                color: rgb(255, 212, 22)
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Ola,Mundo</h1>
+        <p>Já me Livrei da maldição</p>
+        <script>
+            //var n1 = Number.parseInt(window.prompt('Digite um número :')); // Conversão de String para Inteiro
+            //var n2 = Number.parseInt(window.prompt('Digite outro nmúmero :s'));
+            //var n1 = Number.parseFloat(window.prompt('Digite um número :')); // Conversão de String para Real
+            //var n2 = Number.parseFloat(window.prompt('Digite outro nmúmero :s'));
+            var n1 = Number(window.prompt('Digite um número :')); // Conversão de Automatica.
+            var n2 = Number(window.prompt('Digite outro nmúmero :s'));
+            var soma = n1 + n2;
+            //window.alert("A soma de" + soma); //Concatenação
+            window.alert(`A soma de ${n1} + ${n2} é ${soma}`); //Template String
+        </script>
+    </body>
+</html>

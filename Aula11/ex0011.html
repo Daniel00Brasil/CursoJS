@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEROPORTo</title>
+</head>
+    <h1>Mostra sua nacionalidade</h1>
+    Digite o pais de origem: <input type ="text" name="txtPais" id="txtPais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="result">
+
+    </div>
+
+<body>
+    <script>
+        function verificar() {
+            var pais = document.getElementsByName('txtPais');
+            var result = document.querySelector('div#result');
+            var orig = String(pais.value); 
+            result.innerHTML=`<p>Você digitou ${orig} como seu pais de nascimento<p>`
+            if (pais = Brasil){
+                reasult.innerHTML += 'Você é Brasileiro'
+            }
+            result.innerHTML += 'Você é estrangeiro'
+        }
+    </script>
+    
+</body>
+</html>
